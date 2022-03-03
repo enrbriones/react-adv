@@ -42,6 +42,8 @@ export const ShoppingPage = () => {
                     }} />
                     <ProductButtons style={{display: 'flex', justifyContent:'end'}} />
                 </ProductCard>
+
+
             </div>
         </div>
     )
