@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 import { createContext, ReactElement } from "react";
+=======
+import { createContext } from 'react';
+
+import { useProduct } from '../hooks/useProduct';
+import { ProductContextProps, Product, onChangeArgs, InitialValues, ProductCardHandlers } from '../interfaces/interfaces';
+
+import styles from '../styles/styles.module.css'
+
+export const ProductContext = createContext({} as ProductContextProps);
+const { Provider } = ProductContext;
+>>>>>>> d8dc3e4f51d3408e944035f0de144f99eb485776
 
 import { useProduct } from "../hooks/useProduct";
 import { ProductContextProps, Product, onChangeArgs, InitialValues, ProductCardHandlers } from '../interfaces/interfaces';

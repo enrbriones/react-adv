@@ -19,6 +19,11 @@ export const ProductButtons = ({className, style}:Props) => {
     )
     
 
+    const isMaxReached = useCallback(
+        () => !!maxCount && counter === maxCount,
+        [counter, maxCount],
+    );
+    
     return (
         <div className={ `${styles.buttonsContainer} ${className}` } style={style}>
             <button

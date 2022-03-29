@@ -36,6 +36,10 @@ export const useProduct = ({ onChange, product, value = 0, initialValues }: useP
     }, [])
     
 
+    useEffect(() => {
+        isMounted.current = true;
+    }, [])
+
     return {
         counter,
         isMaxCountReached: !!initialValues?.count && initialValues.maxCount === counter,
